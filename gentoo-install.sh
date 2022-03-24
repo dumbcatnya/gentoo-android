@@ -4,6 +4,9 @@ mkdir -p $GENTOO/data
 curl -LO http://distfiles.gentoo.org/experimental/prefix/arm/prefix-stage3-arm64-20200704.tar.xz
 proot --link2symlink tar -C $GENTOO/data -xf prefix-stage3-arm64-20200704.tar.xz
 
+wget https://raw.githubusercontent.com/rushia727/gentoo-android/main/start-gentoo.sh
+chmod +x start-gentoo.sh
+
 #!/bin/bash
 
 unset LD_PRELOAD
